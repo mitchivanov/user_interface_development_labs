@@ -1,0 +1,3 @@
+numexpr
+matplotlib
+numpy

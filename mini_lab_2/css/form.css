@@ -1,0 +1,22 @@
+.form_container {
+  width: 50%;
+  height: fit-content;
+  padding: 5% 5% 0 5%;
+  margin-top: 2%;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.underlined_text {
+  margin-left: 0;
+  align-items: center;
+  color: #033169;
+  text-decoration: underline;
+  text-decoration-color: #76ead5;
+  text-transform: uppercase;
+}
+
+/* Свойства цкласса при наведении */
+.underlined_text:hover {
+  cursor: pointer;
+}

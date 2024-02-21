@@ -1,0 +1,106 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+  <div class="form_container row" id="sign_up_form">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validation password">
+          <label for="password">Password</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password_repeat" type="password" class="validation repeat password">
+          <label for="password_repeat">Repeat password</label>
+         </div>
+      </div>
+      <div class="row">
+        <button class="btn waves-effect waves-light col s4 offset-s4" type="submit" id="sign_up_btn" disabled>
+          Sign up
+          <i class="material-icons right">send</i>
+        </button>
+      </div>
+    </form>
+    <div class="row">
+      <div class="col s6"> Already registered? </div>
+      <div class="underlined_text col s5" id="sign_in_link"> Sign in! </div>
+    </div>
+  </div>
+  <div class="form_container row" id="sign_in_form" style="display: none">
+    <div class="row" id="warning_text_sign_in" style="display: none">
+      <div class="col s12"> Incorrect email or password </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+          <input id="email_sign_in" type="email" class="validate">
+          <label for="email_sign_in">Email</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+          <input id="password_sign_in" type="password" class="validation password">
+          <label for="password_sign_in">Password</label>
+        </div>
+    </div>
+    <div class="row">
+        <button class="btn waves-effect waves-light col s4 offset-s4" type="submit" id="sign_in_btn" disabled>
+          Sign in
+          <i class="material-icons right">send</i>
+        </button>
+    </div>
+  </div>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script type="module" src="js/main.js"></script>
+</div>
